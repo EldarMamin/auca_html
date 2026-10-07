@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+#header {
+    background-color: dimgray;
+    border-bottom: 2rem solid PaleVioletRed;
+    padding: 0.5rem 1rem;
+}
+
+#header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#title {
+    background-color: lightgray;
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+}
+
+#title h2 {
+    margin-bottom: 0.3rem;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#about img {
+    width: 220px;
+    height: auto;
+}
+
+#about div {
+    flex: 1;
+}
+
+h3 {
+    color: PaleVioletRed;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#fav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 1rem auto 3rem;
+    padding: 0 1rem;
+}
+
+#fav ol {
+    width: 30%;
+}
+
+#wish {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#wish p {
+    margin-top: 1rem;
+}
