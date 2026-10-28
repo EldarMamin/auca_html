@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("target.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    height: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.box1 {
+    flex-basis: 1400px;
+}
+
+.box2 {
+    flex-basis: 295px;
+}
+
+.box3 {
+    flex-basis: 1095px;
+}
+
+.box4 {
+    flex-basis: 1060px;
+}
+
+.box5, .box6 {
+    flex-basis: clamp(
+        160px,
+        calc(688.8889px - 37.7778vw),
+        500px
+    );
+}
