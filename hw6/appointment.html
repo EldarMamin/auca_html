@@ -1,8 +1,362 @@
-<!doctype html><html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Prototype appointment request for MercyMed. No data is sent or stored."><meta name="theme-color" content="#ffffff"><title>Request an appointment — MercyMed (demo)</title><link rel="icon" type="image/png" href="images/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="container header-inner">
-<a class="brand" href="index.html" aria-label="MercyMed — home"><img src="images/logo.png" alt="MercyMed logo"></a>
-<nav class="desktop-nav" aria-label="Main navigation"><a href="index.html"><span class="tr" data-en="Home" data-ru="Главная" data-ky="Башкы бет">Home</span></a><a href="services.html"><span class="tr" data-en="Services" data-ru="Услуги" data-ky="Кызматтар">Services</span></a><a href="team.html"><span class="tr" data-en="Team" data-ru="Команда" data-ky="Команда">Team</span></a><a href="about.html"><span class="tr" data-en="About" data-ru="О нас" data-ky="Биз жөнүндө">About</span></a><a href="mobile-clinics.html"><span class="tr" data-en="Mobile clinics" data-ru="Выездные клиники" data-ky="Көчмө клиникалар">Mobile clinics</span></a><a href="contact.html"><span class="tr" data-en="Contact" data-ru="Контакты" data-ky="Байланыш">Contact</span></a></nav>
-<div class="header-actions"><div class="language-picker" role="group" aria-label="Language"><button class="lang-btn" data-lang="en" type="button">EN</button><button class="lang-btn" data-lang="ru" type="button">RU</button><button class="lang-btn" data-lang="ky" type="button">KG</button></div>
-<a href="appointment.html" class="btn btn-primary header-cta"><span class="tr" data-en="Request an appointment" data-ru="Записаться на приём" data-ky="Кабылдоого жазылуу">Request an appointment</span></a>
-<button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span class="menu-lines">☰</span></button></div></div>
-<div id="mobile-menu" class="mobile-menu" hidden><nav class="container mobile-nav" aria-label="Mobile navigation"><a href="index.html"><span class="tr" data-en="Home" data-ru="Главная" data-ky="Башкы бет">Home</span></a><a href="services.html"><span class="tr" data-en="Services" data-ru="Услуги" data-ky="Кызматтар">Services</span></a><a href="team.html"><span class="tr" data-en="Team" data-ru="Команда" data-ky="Команда">Team</span></a><a href="about.html"><span class="tr" data-en="About" data-ru="О нас" data-ky="Биз жөнүндө">About</span></a><a href="mobile-clinics.html"><span class="tr" data-en="Mobile clinics" data-ru="Выездные клиники" data-ky="Көчмө клиникалар">Mobile clinics</span></a><a href="contact.html"><span class="tr" data-en="Contact" data-ru="Контакты" data-ky="Байланыш">Contact</span></a><a class="btn btn-primary" href="appointment.html"><span class="tr" data-en="Request an appointment" data-ru="Записаться на приём" data-ky="Кабылдоого жазылуу">Request an appointment</span></a><div class="language-picker mobile-langs" role="group" aria-label="Language"><button class="lang-btn" data-lang="en" type="button">EN</button><button class="lang-btn" data-lang="ru" type="button">RU</button><button class="lang-btn" data-lang="ky" type="button">KG</button></div></nav></div>
-<div class="ky-notice" hidden><span class="tr" data-en="" data-ru="" data-ky="Кыргызча котормо клиниканын текшерүүсүн күтүүдө (translation pending review)."></span></div></header><main id="main"><section class="container intro"><p class="eyebrow"><span class="tr" data-en="Demo" data-ru="Демо" data-ky="Демо">Demo</span></p><h1><span class="tr" data-en="Request an appointment" data-ru="Записаться на приём" data-ky="Кабылдоого жазылуу">Request an appointment</span></h1></section><section class="container appointment-container"><div class="notice demo-note"><span class="notice-icon">ⓘ</span><p><span class="tr" data-en="This is a prototype demonstration. Nothing you enter is sent or stored. Please do not enter real medical information. Real booking (e.g. via WhatsApp) is awaiting client confirmation." data-ru="Это демонстрация прототипа. Введённые данные никуда не отправляются и не сохраняются. Не вводите реальные медицинские данные. Настоящая запись (например, через WhatsApp) ожидает подтверждения клиники." data-ky="Бул прототиптин демонстрациясы. Киргизилген маалымат жөнөтүлбөйт жана сакталбайт. Чыныгы медициналык маалыматты киргизбеңиз. Чыныгы жазылуу (мисалы, WhatsApp аркылуу) клиниканын тастыктоосун күтүүдө.">This is a prototype demonstration. Nothing you enter is sent or stored. Please do not enter real medical information. Real booking (e.g. via WhatsApp) is awaiting client confirmation.</span></p></div><form id="demo-booking" class="booking-form" autocomplete="off"><label class="full"><span class="tr" data-en="Service" data-ru="Услуга" data-ky="Кызмат">Service</span><select name="service" required><option value="" selected disabled>—</option><option value="service0" data-en="Daily consultations" data-ru="Ежедневные консультации" data-ky="Күнүмдүк консультациялар">Daily consultations</option><option value="service1" data-en="Consultations in many languages" data-ru="Консультации на разных языках" data-ky="Ар кандай тилдердеги консультациялар">Consultations in many languages</option><option value="service2" data-en="Preventative check-ups" data-ru="Профилактические осмотры" data-ky="Алдын алуучу текшерүүлөр">Preventative check-ups</option><option value="service3" data-en="Medical documents &amp; certificates" data-ru="Медицинские справки" data-ky="Медициналык справкалар">Medical documents &amp; certificates</option></select></label><label class="full"><span class="tr" data-en="Preferred doctor (optional)" data-ru="Желаемый врач (необязательно)" data-ky="Каалаган дарыгер (милдеттүү эмес)">Preferred doctor (optional)</span><select name="doctor"><option value="" data-en="Any available" data-ru="Любой свободный" data-ky="Каалаган бош">Any available</option><option value="Mahabat Alieva" data-en="Mahabat Alieva — Director / Doula" data-ru="Mahabat Alieva — Директор / Доула" data-ky="Mahabat Alieva — Директор / Доула">Mahabat Alieva — Director / Doula</option><option value="Jonathan Williams" data-en="Jonathan Williams — Chief doctor / Pediatrics" data-ru="Jonathan Williams — Главный врач / Педиатрия" data-ky="Jonathan Williams — Башкы дарыгер / Педиатрия">Jonathan Williams — Chief doctor / Pediatrics</option><option value="Irina Pak" data-en="Irina Pak — Pediatrics / Family medicine" data-ru="Irina Pak — Педиатрия / Семейная медицина" data-ky="Irina Pak — Педиатрия / Үй-бүлөлүк медицина">Irina Pak — Pediatrics / Family medicine</option><option value="Nasyikat Dononbaeva" data-en="Nasyikat Dononbaeva — Internal medicine / Pulmonology" data-ru="Nasyikat Dononbaeva — Терапия / Пульмонология" data-ky="Nasyikat Dononbaeva — Ички оорулар / Пульмонология">Nasyikat Dononbaeva — Internal medicine / Pulmonology</option><option value="Nabat Gasimova" data-en="Nabat Gasimova — Pediatrics / Intensivist" data-ru="Nabat Gasimova — Педиатрия / Реаниматолог" data-ky="Nabat Gasimova — Педиатрия / Реаниматолог">Nabat Gasimova — Pediatrics / Intensivist</option><option value="Nancy Yau" data-en="Nancy Yau — Pediatrics" data-ru="Nancy Yau — Педиатрия" data-ky="Nancy Yau — Педиатрия">Nancy Yau — Pediatrics</option><option value="Lukas Meyer-Landholt" data-en="Lukas Meyer-Landholt — Pediatrics / Oncology" data-ru="Lukas Meyer-Landholt — Педиатрия / Онкология" data-ky="Lukas Meyer-Landholt — Педиатрия / Онкология">Lukas Meyer-Landholt — Pediatrics / Oncology</option><option value="Madison Smith" data-en="Madison Smith — Physical therapist" data-ru="Madison Smith — Физиотерапевт" data-ky="Madison Smith — Физиотерапевт">Madison Smith — Physical therapist</option><option value="Simbat Sadyrbaeva" data-en="Simbat Sadyrbaeva — Gynecology" data-ru="Simbat Sadyrbaeva — Гинекология" data-ky="Simbat Sadyrbaeva — Гинекология">Simbat Sadyrbaeva — Gynecology</option><option value="Nargiza Islamova" data-en="Nargiza Islamova — Ultrasound" data-ru="Nargiza Islamova — УЗИ-диагностика" data-ky="Nargiza Islamova — УЗИ-диагностика">Nargiza Islamova — Ultrasound</option></select></label><label><span class="tr" data-en="Name (demo)" data-ru="Имя (демо)" data-ky="Аты (демо)">Name (demo)</span><input name="demo" placeholder="Demo"></label><label><span class="tr" data-en="Preferred day" data-ru="Желаемый день" data-ky="Каалаган күн">Preferred day</span><input name="day" type="date"></label><button type="submit" class="btn btn-primary full"><span class="tr" data-en="Send demo request" data-ru="Отправить демо-заявку" data-ky="Демо өтүнмө жөнөтүү">Send demo request</span></button></form><div class="demo-success" id="demo-success" role="status" hidden><h2><span class="tr" data-en="Demo complete" data-ru="Демо завершено" data-ky="Демо аяктады">Demo complete</span></h2><p><span class="tr" data-en="In the real website, the clinic would contact you to confirm a time. No data was sent." data-ru="На настоящем сайте клиника связалась бы с вами для подтверждения времени. Данные не отправлены." data-ky="Чыныгы сайтта клиника убакытты тастыктоо үчүн сиз менен байланышмак. Маалымат жөнөтүлгөн жок.">In the real website, the clinic would contact you to confirm a time. No data was sent.</span></p><button id="demo-again" class="btn btn-outline" type="button"><span class="tr" data-en="Try again" data-ru="Ещё раз" data-ky="Кайра">Try again</span></button></div></section></main><footer class="site-footer"><div class="container footer-grid"><div><a href="index.html"><img class="footer-logo" src="images/logo.png" alt="MercyMed"></a><p><span class="tr" data-en="Private family medical centre in Bishkek. Evidence-based, international medicine." data-ru="Частный семейный медицинский центр в Бишкеке. Доказательная международная медицина." data-ky="Бишкектеги жеке үй-бүлөлүк медициналык борбор. Далилдүү эл аралык медицина.">Private family medical centre in Bishkek. Evidence-based, international medicine.</span></p></div><nav aria-label="Footer navigation" class="footer-nav"><a href="index.html"><span class="tr" data-en="Home" data-ru="Главная" data-ky="Башкы бет">Home</span></a><a href="services.html"><span class="tr" data-en="Services" data-ru="Услуги" data-ky="Кызматтар">Services</span></a><a href="team.html"><span class="tr" data-en="Team" data-ru="Команда" data-ky="Команда">Team</span></a><a href="about.html"><span class="tr" data-en="About" data-ru="О нас" data-ky="Биз жөнүндө">About</span></a><a href="mobile-clinics.html"><span class="tr" data-en="Mobile clinics" data-ru="Выездные клиники" data-ky="Көчмө клиникалар">Mobile clinics</span></a><a href="contact.html"><span class="tr" data-en="Contact" data-ru="Контакты" data-ky="Байланыш">Contact</span></a></nav><div><p><span class="tr" data-en="Tunguch microdistrict, near Ayu Grand, Bishkek" data-ru="мкр. Тунгуч, рядом с Ayu Grand, Бишкек" data-ky="Тунгуч кичи району, Ayu Grand жанында, Бишкек">Tunguch microdistrict, near Ayu Grand, Bishkek</span></p><p class="prototype"><span class="tr" data-en="Prototype website — content awaiting clinic approval." data-ru="Прототип сайта — содержание ожидает утверждения клиникой." data-ky="Сайттын прототиби — мазмуну клиниканын бекитүүсүн күтүүдө.">Prototype website — content awaiting clinic approval.</span></p></div></div></footer><script src="script.js" defer></script></body></html>
+<!DOCTYPE html>
+<html data-lang="en" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Prototype appointment form; no data sent or stored." name="description"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <title>
+   Appointment demo | MercyMed
+  </title>
+  <link href="images/favicon.png" rel="icon" type="image/png"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;family=Unbounded:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   <span class="tr" data-en="Skip to main content" data-ky="&Ncy;&iecy;&gcy;&icy;&zcy;&gcy;&icy; &mcy;&acy;&zcy;&mcy;&ucy;&ncy;&gcy;&acy; ө&tcy;үү" data-ru="&Kcy; &scy;&ocy;&dcy;&iecy;&rcy;&zhcy;&icy;&mcy;&ocy;&mcy;&ucy;">
+    Skip to main content
+   </span>
+  </a>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a aria-label="MercyMed home" class="brand" href="index.html">
+     <img alt="MercyMed medical centre logo" src="images/logo.png"/>
+    </a>
+    <nav aria-label="Primary navigation" class="desktop-nav">
+     <a href="index.html">
+      <span class="tr" data-en="Home" data-ky="&Bcy;&acy;&shcy;&kcy;&ycy; &bcy;&iecy;&tcy;" data-ru="&Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;">
+       Home
+      </span>
+     </a>
+     <a href="services.html">
+      <span class="tr" data-en="Services" data-ky="&Kcy;&ycy;&zcy;&mcy;&acy;&tcy;&tcy;&acy;&rcy;" data-ru="&Ucy;&scy;&lcy;&ucy;&gcy;&icy;">
+       Services
+      </span>
+     </a>
+     <a href="team.html">
+      <span class="tr" data-en="Team" data-ky="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;" data-ru="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;">
+       Team
+      </span>
+     </a>
+     <a href="corporate.html">
+      <span class="tr" data-en="For organisations" data-ky="&Ucy;&yucy;&mcy;&dcy;&acy;&rcy; ү&chcy;ү&ncy;" data-ru="&Dcy;&lcy;&yacy; &ocy;&rcy;&gcy;&acy;&ncy;&icy;&zcy;&acy;&tscy;&icy;&jcy;">
+       For organisations
+      </span>
+     </a>
+     <a href="education.html">
+      <span class="tr" data-en="Medical education" data-ky="&Mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &bcy;&icy;&lcy;&icy;&mcy; &bcy;&iecy;&rcy;үү" data-ru="&Mcy;&iecy;&dcy;&ocy;&bcy;&rcy;&acy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;">
+       Medical education
+      </span>
+     </a>
+     <details class="nav-more">
+      <summary aria-label="More pages">
+       <span class="tr" data-en="More" data-ky="&Dcy;&acy;&gcy;&ycy;" data-ru="&IEcy;&shchcy;&iocy;">
+        More
+       </span>
+      </summary>
+      <div class="nav-more-panel">
+       <a href="about.html">
+        <span class="tr" data-en="About us" data-ky="&Bcy;&icy;&zcy; &zhcy;ө&ncy;ү&ncy;&dcy;ө" data-ru="&Ocy; &ncy;&acy;&scy;">
+         About us
+        </span>
+       </a>
+       <a href="mobile-clinics.html">
+        <span class="tr" data-en="Mobile clinics" data-ky="&Kcy;ө&chcy;&mcy;ө &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&lcy;&acy;&rcy;" data-ru="&Vcy;&ycy;&iecy;&zcy;&dcy;&ncy;&ycy;&iecy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;">
+         Mobile clinics
+        </span>
+       </a>
+       <a href="contact.html">
+        <span class="tr" data-en="Contact" data-ky="&Bcy;&acy;&jcy;&lcy;&acy;&ncy;&ycy;&shcy;" data-ru="&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;">
+         Contact
+        </span>
+       </a>
+      </div>
+     </details>
+    </nav>
+    <div class="header-actions">
+     <div aria-label="Site language" class="language-picker" role="group">
+      <button aria-label="Show English language" class="lang-btn" data-lang="en" type="button">
+       EN
+      </button>
+      <button aria-label="&Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &rcy;&ucy;&scy;&scy;&kcy;&icy;&jcy; &yacy;&zcy;&ycy;&kcy;" class="lang-btn" data-lang="ru" type="button">
+       RU
+      </button>
+      <button aria-label="&Kcy;&ycy;&rcy;&gcy;&ycy;&zcy; &tcy;&icy;&lcy;&icy;&ncy; &kcy;ө&rcy;&scy;ө&tcy;үү" class="lang-btn" data-lang="ky" type="button">
+       KG
+      </button>
+     </div>
+     <a class="btn btn-primary header-cta" href="appointment.html">
+      <span class="tr" data-en="Request an appointment" data-ky="&Kcy;&acy;&bcy;&ycy;&lcy;&dcy;&ocy;&ocy;&gcy;&ocy; &zhcy;&acy;&zcy;&ycy;&lcy;&ucy;&ucy;" data-ru="&Zcy;&acy;&pcy;&icy;&scy;&acy;&tcy;&softcy;&scy;&yacy; &ncy;&acy; &pcy;&rcy;&icy;&iocy;&mcy;">
+       Request an appointment
+      </span>
+     </a>
+     <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="menu-toggle" data-aria-en="Open menu" data-aria-ky="&Mcy;&iecy;&ncy;&yucy;&ncy;&ucy; &acy;&chcy;&ucy;&ucy;" data-aria-ru="&Ocy;&tcy;&kcy;&rcy;&ycy;&tcy;&softcy; &mcy;&iecy;&ncy;&yucy;" type="button">
+      <span aria-hidden="true" class="menu-lines">
+       ☰
+      </span>
+     </button>
+    </div>
+   </div>
+   <div class="mobile-menu" hidden="" id="mobile-menu">
+    <nav aria-label="Mobile navigation" class="container mobile-nav">
+     <a href="index.html">
+      <span class="tr" data-en="Home" data-ky="&Bcy;&acy;&shcy;&kcy;&ycy; &bcy;&iecy;&tcy;" data-ru="&Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;">
+       Home
+      </span>
+     </a>
+     <a href="services.html">
+      <span class="tr" data-en="Services" data-ky="&Kcy;&ycy;&zcy;&mcy;&acy;&tcy;&tcy;&acy;&rcy;" data-ru="&Ucy;&scy;&lcy;&ucy;&gcy;&icy;">
+       Services
+      </span>
+     </a>
+     <a href="team.html">
+      <span class="tr" data-en="Team" data-ky="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;" data-ru="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;">
+       Team
+      </span>
+     </a>
+     <a href="corporate.html">
+      <span class="tr" data-en="For organisations" data-ky="&Ucy;&yucy;&mcy;&dcy;&acy;&rcy; ү&chcy;ү&ncy;" data-ru="&Dcy;&lcy;&yacy; &ocy;&rcy;&gcy;&acy;&ncy;&icy;&zcy;&acy;&tscy;&icy;&jcy;">
+       For organisations
+      </span>
+     </a>
+     <a href="education.html">
+      <span class="tr" data-en="Medical education" data-ky="&Mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &bcy;&icy;&lcy;&icy;&mcy; &bcy;&iecy;&rcy;үү" data-ru="&Mcy;&iecy;&dcy;&ocy;&bcy;&rcy;&acy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;">
+       Medical education
+      </span>
+     </a>
+     <a href="about.html">
+      <span class="tr" data-en="About us" data-ky="&Bcy;&icy;&zcy; &zhcy;ө&ncy;ү&ncy;&dcy;ө" data-ru="&Ocy; &ncy;&acy;&scy;">
+       About us
+      </span>
+     </a>
+     <a href="mobile-clinics.html">
+      <span class="tr" data-en="Mobile clinics" data-ky="&Kcy;ө&chcy;&mcy;ө &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&lcy;&acy;&rcy;" data-ru="&Vcy;&ycy;&iecy;&zcy;&dcy;&ncy;&ycy;&iecy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;">
+       Mobile clinics
+      </span>
+     </a>
+     <a href="contact.html">
+      <span class="tr" data-en="Contact" data-ky="&Bcy;&acy;&jcy;&lcy;&acy;&ncy;&ycy;&shcy;" data-ru="&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;">
+       Contact
+      </span>
+     </a>
+     <a class="btn btn-primary" href="appointment.html">
+      <span class="tr" data-en="Request an appointment" data-ky="&Kcy;&acy;&bcy;&ycy;&lcy;&dcy;&ocy;&ocy;&gcy;&ocy; &zhcy;&acy;&zcy;&ycy;&lcy;&ucy;&ucy;" data-ru="&Zcy;&acy;&pcy;&icy;&scy;&acy;&tcy;&softcy;&scy;&yacy; &ncy;&acy; &pcy;&rcy;&icy;&iocy;&mcy;">
+       Request an appointment
+      </span>
+     </a>
+     <div aria-label="Site language" class="language-picker mobile-langs" role="group">
+      <button class="lang-btn" data-lang="en" type="button">
+       EN
+      </button>
+      <button class="lang-btn" data-lang="ru" type="button">
+       RU
+      </button>
+      <button class="lang-btn" data-lang="ky" type="button">
+       KG
+      </button>
+     </div>
+    </nav>
+   </div>
+   <div class="ky-notice" hidden="">
+    <span class="tr" data-en="Translations pending clinic review." data-ky="&Kcy;&ycy;&rcy;&gcy;&ycy;&zcy;&chcy;&acy; &kcy;&ocy;&tcy;&ocy;&rcy;&mcy;&ocy;&lcy;&ocy;&rcy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&ncy;&ycy;&ncy; &tcy;&iecy;&kcy;&shcy;&iecy;&rcy;үү&scy;ү&ncy; &kcy;ү&tcy;үү&dcy;ө." data-ru="&Pcy;&iecy;&rcy;&iecy;&vcy;&ocy;&dcy;&ycy; &ocy;&zhcy;&icy;&dcy;&acy;&yucy;&tcy; &pcy;&rcy;&ocy;&vcy;&iecy;&rcy;&kcy;&icy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;.">
+     Translations pending clinic review.
+    </span>
+   </div>
+  </header>
+  <main id="main">
+   <section class="container intro">
+    <p class="eyebrow">
+     <span class="tr" data-en="Demo" data-ky="&Dcy;&iecy;&mcy;&ocy;" data-ru="&Dcy;&iecy;&mcy;&ocy;">
+      Demo
+     </span>
+    </p>
+    <h1>
+     <span class="tr" data-en="Request an appointment" data-ky="&Kcy;&acy;&bcy;&ycy;&lcy;&dcy;&ocy;&ocy;&gcy;&ocy; &zhcy;&acy;&zcy;&ycy;&lcy;&ucy;&ucy;" data-ru="&Zcy;&acy;&pcy;&icy;&scy;&acy;&tcy;&softcy;&scy;&yacy; &ncy;&acy; &pcy;&rcy;&icy;&iocy;&mcy;">
+      Request an appointment
+     </span>
+    </h1>
+   </section>
+   <section class="container appointment-container">
+    <div class="notice demo-note">
+     <span class="notice-icon">
+      ⓘ
+     </span>
+     <p>
+      <span class="tr" data-en="This is a prototype demonstration. Nothing you enter is sent or stored. Please do not enter real medical information. Real booking (e.g. via WhatsApp) is awaiting client confirmation." data-ky="&Bcy;&ucy;&lcy; &pcy;&rcy;&ocy;&tcy;&ocy;&tcy;&icy;&pcy;&tcy;&icy;&ncy; &dcy;&iecy;&mcy;&ocy;&ncy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy;&scy;&ycy;. &Kcy;&icy;&rcy;&gcy;&icy;&zcy;&icy;&lcy;&gcy;&iecy;&ncy; &mcy;&acy;&acy;&lcy;&ycy;&mcy;&acy;&tcy; &zhcy;ө&ncy;ө&tcy;ү&lcy;&bcy;ө&jcy;&tcy; &zhcy;&acy;&ncy;&acy; &scy;&acy;&kcy;&tcy;&acy;&lcy;&bcy;&acy;&jcy;&tcy;. &CHcy;&ycy;&ncy;&ycy;&gcy;&ycy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &mcy;&acy;&acy;&lcy;&ycy;&mcy;&acy;&tcy;&tcy;&ycy; &kcy;&icy;&rcy;&gcy;&icy;&zcy;&bcy;&iecy;ң&icy;&zcy;. &CHcy;&ycy;&ncy;&ycy;&gcy;&ycy; &zhcy;&acy;&zcy;&ycy;&lcy;&ucy;&ucy; (&mcy;&icy;&scy;&acy;&lcy;&ycy;, WhatsApp &acy;&rcy;&kcy;&ycy;&lcy;&ucy;&ucy;) &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&ncy;&ycy;&ncy; &tcy;&acy;&scy;&tcy;&ycy;&kcy;&tcy;&ocy;&ocy;&scy;&ucy;&ncy; &kcy;ү&tcy;үү&dcy;ө." data-ru="&Ecy;&tcy;&ocy; &dcy;&iecy;&mcy;&ocy;&ncy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy; &pcy;&rcy;&ocy;&tcy;&ocy;&tcy;&icy;&pcy;&acy;. &Vcy;&vcy;&iecy;&dcy;&iocy;&ncy;&ncy;&ycy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy; &ncy;&icy;&kcy;&ucy;&dcy;&acy; &ncy;&iecy; &ocy;&tcy;&pcy;&rcy;&acy;&vcy;&lcy;&yacy;&yucy;&tcy;&scy;&yacy; &icy; &ncy;&iecy; &scy;&ocy;&khcy;&rcy;&acy;&ncy;&yacy;&yucy;&tcy;&scy;&yacy;. &Ncy;&iecy; &vcy;&vcy;&ocy;&dcy;&icy;&tcy;&iecy; &rcy;&iecy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&scy;&kcy;&icy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy;. &Ncy;&acy;&scy;&tcy;&ocy;&yacy;&shchcy;&acy;&yacy; &zcy;&acy;&pcy;&icy;&scy;&softcy; (&ncy;&acy;&pcy;&rcy;&icy;&mcy;&iecy;&rcy;, &chcy;&iecy;&rcy;&iecy;&zcy; WhatsApp) &ocy;&zhcy;&icy;&dcy;&acy;&iecy;&tcy; &pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&iecy;&ncy;&icy;&yacy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;.">
+       This is a prototype demonstration. Nothing you enter is sent or stored. Please do not enter real medical information. Real booking (e.g. via WhatsApp) is awaiting client confirmation.
+      </span>
+     </p>
+    </div>
+    <p class="notice whatsapp-pending" role="status">
+     <span class="tr" data-en="WhatsApp booking: awaiting client confirmation. This form does not send messages." data-ky="WhatsApp &acy;&rcy;&kcy;&ycy;&lcy;&ucy;&ucy; &zhcy;&acy;&zcy;&ycy;&lcy;&ucy;&ucy;: &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&ncy;&ycy;&ncy; &tcy;&acy;&scy;&tcy;&ycy;&kcy;&tcy;&ocy;&ocy;&scy;&ucy;&ncy; &kcy;ү&tcy;үү&dcy;ө. &Bcy;&ucy;&lcy; &fcy;&ocy;&rcy;&mcy;&acy; &bcy;&icy;&lcy;&dcy;&icy;&rcy;үү &zhcy;ө&ncy;ө&tcy;&pcy;ө&jcy;&tcy;." data-ru="&Zcy;&acy;&pcy;&icy;&scy;&softcy; &chcy;&iecy;&rcy;&iecy;&zcy; WhatsApp: &ocy;&zhcy;&icy;&dcy;&acy;&iecy;&tcy; &pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&iecy;&ncy;&icy;&yacy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;. &Ecy;&tcy;&acy; &fcy;&ocy;&rcy;&mcy;&acy; &ncy;&iecy; &ocy;&tcy;&pcy;&rcy;&acy;&vcy;&lcy;&yacy;&iecy;&tcy; &scy;&ocy;&ocy;&bcy;&shchcy;&iecy;&ncy;&icy;&yacy;.">
+      WhatsApp booking: awaiting client confirmation. This form does not send messages.
+     </span>
+    </p>
+    <form autocomplete="off" class="booking-form" id="demo-booking">
+     <p class="full muted demo-instructions">
+      <span class="tr" data-en="Choose sample options only. Do not enter personal or medical information." data-ky="&Dcy;&iecy;&mcy;&ocy; &vcy;&acy;&rcy;&icy;&acy;&ncy;&tcy;&tcy;&acy;&rcy;&ycy;&ncy; &gcy;&acy;&ncy;&acy; &tcy;&acy;&ncy;&dcy;&acy;ң&ycy;&zcy;. &ZHcy;&iecy;&kcy;&iecy; &zhcy;&iecy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &mcy;&acy;&acy;&lcy;&ycy;&mcy;&acy;&tcy;&tcy;&ycy; &kcy;&icy;&rcy;&gcy;&icy;&zcy;&bcy;&iecy;ң&icy;&zcy;." data-ru="&Vcy;&ycy;&bcy;&icy;&rcy;&acy;&jcy;&tcy;&iecy; &tcy;&ocy;&lcy;&softcy;&kcy;&ocy; &dcy;&iecy;&mcy;&ocy;&ncy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&ocy;&ncy;&ncy;&ycy;&iecy; &vcy;&acy;&rcy;&icy;&acy;&ncy;&tcy;&ycy;. &Ncy;&iecy; &vcy;&vcy;&ocy;&dcy;&icy;&tcy;&iecy; &lcy;&icy;&chcy;&ncy;&ycy;&iecy; &icy;&lcy;&icy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&scy;&kcy;&icy;&iecy; &dcy;&acy;&ncy;&ncy;&ycy;&iecy;.">
+       Choose sample options only. Do not enter personal or medical information.
+      </span>
+     </p>
+     <label class="full">
+      <span class="tr" data-en="Service" data-ky="&Kcy;&ycy;&zcy;&mcy;&acy;&tcy;" data-ru="&Ucy;&scy;&lcy;&ucy;&gcy;&acy;">
+       Service
+      </span>
+      <select name="service" required="">
+       <option disabled="" selected="" value="">
+        &mdash;
+       </option>
+       <option data-en="Daily consultations" data-ky="&Kcy;ү&ncy;ү&mcy;&dcy;ү&kcy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;&lcy;&acy;&rcy;" data-ru="&IEcy;&zhcy;&iecy;&dcy;&ncy;&iecy;&vcy;&ncy;&ycy;&iecy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&icy;" value="service0">
+        Daily consultations
+       </option>
+       <option data-en="Consultations in many languages" data-ky="&Acy;&rcy; &kcy;&acy;&ncy;&dcy;&acy;&jcy; &tcy;&icy;&lcy;&dcy;&iecy;&rcy;&dcy;&iecy;&gcy;&icy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;&lcy;&acy;&rcy;" data-ru="&Kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&icy; &ncy;&acy; &rcy;&acy;&zcy;&ncy;&ycy;&khcy; &yacy;&zcy;&ycy;&kcy;&acy;&khcy;" value="service1">
+        Consultations in many languages
+       </option>
+       <option data-en="Preventative check-ups" data-ky="&Acy;&lcy;&dcy;&ycy;&ncy; &acy;&lcy;&ucy;&ucy;&chcy;&ucy; &tcy;&iecy;&kcy;&shcy;&iecy;&rcy;үү&lcy;ө&rcy;" data-ru="&Pcy;&rcy;&ocy;&fcy;&icy;&lcy;&acy;&kcy;&tcy;&icy;&chcy;&iecy;&scy;&kcy;&icy;&iecy; &ocy;&scy;&mcy;&ocy;&tcy;&rcy;&ycy;" value="service2">
+        Preventative check-ups
+       </option>
+       <option data-en="Medical documents &amp; certificates" data-ky="&Mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &scy;&pcy;&rcy;&acy;&vcy;&kcy;&acy;&lcy;&acy;&rcy;" data-ru="&Mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&scy;&kcy;&icy;&iecy; &scy;&pcy;&rcy;&acy;&vcy;&kcy;&icy;" value="service3">
+        Medical documents &amp; certificates
+       </option>
+      </select>
+     </label>
+     <label class="full">
+      <span class="tr" data-en="Preferred doctor (optional)" data-ky="&Kcy;&acy;&acy;&lcy;&acy;&gcy;&acy;&ncy; &dcy;&acy;&rcy;&ycy;&gcy;&iecy;&rcy; (&mcy;&icy;&lcy;&dcy;&iecy;&tcy;&tcy;үү &ecy;&mcy;&iecy;&scy;)" data-ru="&ZHcy;&iecy;&lcy;&acy;&iecy;&mcy;&ycy;&jcy; &vcy;&rcy;&acy;&chcy; (&ncy;&iecy;&ocy;&bcy;&yacy;&zcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy;)">
+       Preferred doctor (optional)
+      </span>
+      <select name="doctor">
+       <option data-en="Any available" data-ky="&Kcy;&acy;&acy;&lcy;&acy;&gcy;&acy;&ncy; &bcy;&ocy;&shcy;" data-ru="&Lcy;&yucy;&bcy;&ocy;&jcy; &scy;&vcy;&ocy;&bcy;&ocy;&dcy;&ncy;&ycy;&jcy;" value="">
+        Any available
+       </option>
+       <option data-en="Mahabat Alieva &mdash; Director / Doula" data-ky="Mahabat Alieva &mdash; &Dcy;&icy;&rcy;&iecy;&kcy;&tcy;&ocy;&rcy; / &Dcy;&ocy;&ucy;&lcy;&acy;" data-ru="Mahabat Alieva &mdash; &Dcy;&icy;&rcy;&iecy;&kcy;&tcy;&ocy;&rcy; / &Dcy;&ocy;&ucy;&lcy;&acy;" value="Mahabat Alieva">
+        Mahabat Alieva &mdash; Director / Doula
+       </option>
+       <option data-en="Jonathan Williams &mdash; Chief doctor / Pediatrics" data-ky="Jonathan Williams &mdash; &Bcy;&acy;&shcy;&kcy;&ycy; &dcy;&acy;&rcy;&ycy;&gcy;&iecy;&rcy; / &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy;" data-ru="Jonathan Williams &mdash; &Gcy;&lcy;&acy;&vcy;&ncy;&ycy;&jcy; &vcy;&rcy;&acy;&chcy; / &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy;" value="Jonathan Williams">
+        Jonathan Williams &mdash; Chief doctor / Pediatrics
+       </option>
+       <option data-en="Irina Pak &mdash; Pediatrics / Family medicine" data-ky="Irina Pak &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / Ү&jcy;-&bcy;ү&lcy;ө&lcy;ү&kcy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;" data-ru="Irina Pak &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / &Scy;&iecy;&mcy;&iecy;&jcy;&ncy;&acy;&yacy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;" value="Irina Pak">
+        Irina Pak &mdash; Pediatrics / Family medicine
+       </option>
+       <option data-en="Nasyikat Dononbaeva &mdash; Internal medicine / Pulmonology" data-ky="Nasyikat Dononbaeva &mdash; &Icy;&chcy;&kcy;&icy; &ocy;&ocy;&rcy;&ucy;&lcy;&acy;&rcy; / &Pcy;&ucy;&lcy;&softcy;&mcy;&ocy;&ncy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" data-ru="Nasyikat Dononbaeva &mdash; &Tcy;&iecy;&rcy;&acy;&pcy;&icy;&yacy; / &Pcy;&ucy;&lcy;&softcy;&mcy;&ocy;&ncy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" value="Nasyikat Dononbaeva">
+        Nasyikat Dononbaeva &mdash; Internal medicine / Pulmonology
+       </option>
+       <option data-en="Nabat Gasimova &mdash; Pediatrics / Intensivist" data-ky="Nabat Gasimova &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / &Rcy;&iecy;&acy;&ncy;&icy;&mcy;&acy;&tcy;&ocy;&lcy;&ocy;&gcy;" data-ru="Nabat Gasimova &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / &Rcy;&iecy;&acy;&ncy;&icy;&mcy;&acy;&tcy;&ocy;&lcy;&ocy;&gcy;" value="Nabat Gasimova">
+        Nabat Gasimova &mdash; Pediatrics / Intensivist
+       </option>
+       <option data-en="Nancy Yau &mdash; Pediatrics" data-ky="Nancy Yau &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy;" data-ru="Nancy Yau &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy;" value="Nancy Yau">
+        Nancy Yau &mdash; Pediatrics
+       </option>
+       <option data-en="Lukas Meyer-Landholt &mdash; Pediatrics / Oncology" data-ky="Lukas Meyer-Landholt &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / &Ocy;&ncy;&kcy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" data-ru="Lukas Meyer-Landholt &mdash; &Pcy;&iecy;&dcy;&icy;&acy;&tcy;&rcy;&icy;&yacy; / &Ocy;&ncy;&kcy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" value="Lukas Meyer-Landholt">
+        Lukas Meyer-Landholt &mdash; Pediatrics / Oncology
+       </option>
+       <option data-en="Madison Smith &mdash; Physical therapist" data-ky="Madison Smith &mdash; &Fcy;&icy;&zcy;&icy;&ocy;&tcy;&iecy;&rcy;&acy;&pcy;&iecy;&vcy;&tcy;" data-ru="Madison Smith &mdash; &Fcy;&icy;&zcy;&icy;&ocy;&tcy;&iecy;&rcy;&acy;&pcy;&iecy;&vcy;&tcy;" value="Madison Smith">
+        Madison Smith &mdash; Physical therapist
+       </option>
+       <option data-en="Simbat Sadyrbaeva &mdash; Gynecology" data-ky="Simbat Sadyrbaeva &mdash; &Gcy;&icy;&ncy;&iecy;&kcy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" data-ru="Simbat Sadyrbaeva &mdash; &Gcy;&icy;&ncy;&iecy;&kcy;&ocy;&lcy;&ocy;&gcy;&icy;&yacy;" value="Simbat Sadyrbaeva">
+        Simbat Sadyrbaeva &mdash; Gynecology
+       </option>
+       <option data-en="Nargiza Islamova &mdash; Ultrasound" data-ky="Nargiza Islamova &mdash; &Ucy;&Zcy;&Icy;-&dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy;" data-ru="Nargiza Islamova &mdash; &Ucy;&Zcy;&Icy;-&dcy;&icy;&acy;&gcy;&ncy;&ocy;&scy;&tcy;&icy;&kcy;&acy;" value="Nargiza Islamova">
+        Nargiza Islamova &mdash; Ultrasound
+       </option>
+      </select>
+     </label>
+     <button class="btn btn-primary full" type="submit">
+      <span class="tr" data-en="Preview demo (not sent)" data-ky="&Dcy;&iecy;&mcy;&ocy;&ncy;&ucy; &kcy;ө&rcy;үү (&zhcy;ө&ncy;ө&tcy;ү&lcy;&bcy;ө&jcy;&tcy;)" data-ru="&Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &dcy;&iecy;&mcy;&ocy; (&ncy;&iecy; &ocy;&tcy;&pcy;&rcy;&acy;&vcy;&lcy;&yacy;&iecy;&tcy;&scy;&yacy;)">
+       Preview demo (not sent)
+      </span>
+     </button>
+    </form>
+    <div class="demo-success" hidden="" id="demo-success" role="status" tabindex="-1">
+     <h2>
+      <span class="tr" data-en="Demo complete" data-ky="&Dcy;&iecy;&mcy;&ocy; &acy;&yacy;&kcy;&tcy;&acy;&dcy;&ycy;" data-ru="&Dcy;&iecy;&mcy;&ocy; &zcy;&acy;&vcy;&iecy;&rcy;&shcy;&iecy;&ncy;&ocy;">
+       Demo complete
+      </span>
+     </h2>
+     <p>
+      <span class="tr" data-en="In the real website, the clinic would contact you to confirm a time. No data was sent." data-ky="&CHcy;&ycy;&ncy;&ycy;&gcy;&ycy; &scy;&acy;&jcy;&tcy;&tcy;&acy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy; &ucy;&bcy;&acy;&kcy;&ycy;&tcy;&tcy;&ycy; &tcy;&acy;&scy;&tcy;&ycy;&kcy;&tcy;&ocy;&ocy; ү&chcy;ү&ncy; &scy;&icy;&zcy; &mcy;&iecy;&ncy;&iecy;&ncy; &bcy;&acy;&jcy;&lcy;&acy;&ncy;&ycy;&shcy;&mcy;&acy;&kcy;. &Mcy;&acy;&acy;&lcy;&ycy;&mcy;&acy;&tcy; &zhcy;ө&ncy;ө&tcy;ү&lcy;&gcy;ө&ncy; &zhcy;&ocy;&kcy;." data-ru="&Ncy;&acy; &ncy;&acy;&scy;&tcy;&ocy;&yacy;&shchcy;&iecy;&mcy; &scy;&acy;&jcy;&tcy;&iecy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy; &scy;&vcy;&yacy;&zcy;&acy;&lcy;&acy;&scy;&softcy; &bcy;&ycy; &scy; &vcy;&acy;&mcy;&icy; &dcy;&lcy;&yacy; &pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&iecy;&ncy;&icy;&yacy; &vcy;&rcy;&iecy;&mcy;&iecy;&ncy;&icy;. &Dcy;&acy;&ncy;&ncy;&ycy;&iecy; &ncy;&iecy; &ocy;&tcy;&pcy;&rcy;&acy;&vcy;&lcy;&iecy;&ncy;&ycy;.">
+       In the real website, the clinic would contact you to confirm a time. No data was sent.
+      </span>
+     </p>
+     <button class="btn btn-outline" id="demo-again" type="button">
+      <span class="tr" data-en="Try again" data-ky="&Kcy;&acy;&jcy;&rcy;&acy;" data-ru="&IEcy;&shchcy;&iocy; &rcy;&acy;&zcy;">
+       Try again
+      </span>
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-grid">
+    <div>
+     <a href="index.html">
+      <img alt="MercyMed logo" class="footer-logo" src="images/logo.png"/>
+     </a>
+     <p>
+      <span class="tr" data-en="Private family medical centre in Bishkek. Evidence-based, international medicine." data-ky="&Bcy;&icy;&shcy;&kcy;&iecy;&kcy;&tcy;&iecy;&gcy;&icy; &zhcy;&iecy;&kcy;&iecy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &bcy;&ocy;&rcy;&bcy;&ocy;&rcy;. &Dcy;&acy;&lcy;&icy;&lcy;&dcy;үү &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy; &zhcy;&acy;&ncy;&acy; &ecy;&lcy; &acy;&rcy;&acy;&lcy;&ycy;&kcy; &tcy;&acy;&zhcy;&rcy;&ycy;&jcy;&bcy;&acy;." data-ru="&CHcy;&acy;&scy;&tcy;&ncy;&ycy;&jcy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&scy;&kcy;&icy;&jcy; &tscy;&iecy;&ncy;&tcy;&rcy; &vcy; &Bcy;&icy;&shcy;&kcy;&iecy;&kcy;&iecy;. &Dcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&acy;&yacy; &mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy; &icy; &mcy;&iecy;&zhcy;&dcy;&ucy;&ncy;&acy;&rcy;&ocy;&dcy;&ncy;&ycy;&jcy; &ocy;&pcy;&ycy;&tcy;.">
+       Private family medical centre in Bishkek. Evidence-based, international medicine.
+      </span>
+     </p>
+    </div>
+    <nav aria-label="Footer navigation" class="footer-nav">
+     <a href="index.html">
+      <span class="tr" data-en="Home" data-ky="&Bcy;&acy;&shcy;&kcy;&ycy; &bcy;&iecy;&tcy;" data-ru="&Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;">
+       Home
+      </span>
+     </a>
+     <a href="services.html">
+      <span class="tr" data-en="Services" data-ky="&Kcy;&ycy;&zcy;&mcy;&acy;&tcy;&tcy;&acy;&rcy;" data-ru="&Ucy;&scy;&lcy;&ucy;&gcy;&icy;">
+       Services
+      </span>
+     </a>
+     <a href="team.html">
+      <span class="tr" data-en="Team" data-ky="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;" data-ru="&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&acy;">
+       Team
+      </span>
+     </a>
+     <a href="corporate.html">
+      <span class="tr" data-en="For organisations" data-ky="&Ucy;&yucy;&mcy;&dcy;&acy;&rcy; ү&chcy;ү&ncy;" data-ru="&Dcy;&lcy;&yacy; &ocy;&rcy;&gcy;&acy;&ncy;&icy;&zcy;&acy;&tscy;&icy;&jcy;">
+       For organisations
+      </span>
+     </a>
+     <a href="education.html">
+      <span class="tr" data-en="Medical education" data-ky="&Mcy;&iecy;&dcy;&icy;&tscy;&icy;&ncy;&acy;&lcy;&ycy;&kcy; &bcy;&icy;&lcy;&icy;&mcy; &bcy;&iecy;&rcy;үү" data-ru="&Mcy;&iecy;&dcy;&ocy;&bcy;&rcy;&acy;&zcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;">
+       Medical education
+      </span>
+     </a>
+     <a href="about.html">
+      <span class="tr" data-en="About us" data-ky="&Bcy;&icy;&zcy; &zhcy;ө&ncy;ү&ncy;&dcy;ө" data-ru="&Ocy; &ncy;&acy;&scy;">
+       About us
+      </span>
+     </a>
+     <a href="mobile-clinics.html">
+      <span class="tr" data-en="Mobile clinics" data-ky="&Kcy;ө&chcy;&mcy;ө &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&lcy;&acy;&rcy;" data-ru="&Vcy;&ycy;&iecy;&zcy;&dcy;&ncy;&ycy;&iecy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;">
+       Mobile clinics
+      </span>
+     </a>
+     <a href="contact.html">
+      <span class="tr" data-en="Contact" data-ky="&Bcy;&acy;&jcy;&lcy;&acy;&ncy;&ycy;&shcy;" data-ru="&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;">
+       Contact
+      </span>
+     </a>
+    </nav>
+    <div>
+     <p>
+      <span class="tr" data-en="Tunguch microdistrict, near Ayu Grand, Bishkek (approximate location)." data-ky="&Tcy;&ucy;&ncy;&gcy;&ucy;&chcy; &kcy;&icy;&chcy;&icy; &rcy;&acy;&jcy;&ocy;&ncy;&ucy;, Ayu Grand &zhcy;&acy;&ncy;&ycy;&ncy;&dcy;&acy;, &Bcy;&icy;&shcy;&kcy;&iecy;&kcy; (&bcy;&ocy;&lcy;&zhcy;&ocy;&lcy;&dcy;&ucy;&ucy; &zhcy;&iecy;&rcy;)." data-ru="&mcy;&kcy;&rcy;. &Tcy;&ucy;&ncy;&gcy;&ucy;&chcy;, &rcy;&yacy;&dcy;&ocy;&mcy; &scy; Ayu Grand, &Bcy;&icy;&shcy;&kcy;&iecy;&kcy; (&pcy;&rcy;&icy;&mcy;&iecy;&rcy;&ncy;&ycy;&jcy; &ocy;&rcy;&icy;&iecy;&ncy;&tcy;&icy;&rcy;).">
+       Tunguch microdistrict, near Ayu Grand, Bishkek (approximate location).
+      </span>
+     </p>
+     <p class="prototype">
+      <span class="tr" data-en="Student prototype &mdash; content and image permissions awaiting clinic approval." data-ky="&Ocy;&kcy;&ucy;&ucy; &pcy;&rcy;&ocy;&tcy;&ocy;&tcy;&icy;&bcy;&icy; &mdash; &mcy;&acy;&acy;&lcy;&ycy;&mcy;&acy;&tcy; &zhcy;&acy;&ncy;&acy; &scy;ү&rcy;ө&tcy; &ucy;&rcy;&ucy;&kcy;&scy;&acy;&tcy;&tcy;&acy;&rcy;&ycy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&acy;&ncy;&ycy;&ncy; &mcy;&acy;&kcy;&ucy;&lcy;&dcy;&ucy;&gcy;&ucy;&ncy; &kcy;ү&tcy;үү&dcy;ө." data-ru="&Ucy;&chcy;&iecy;&bcy;&ncy;&ycy;&jcy; &pcy;&rcy;&ocy;&tcy;&ocy;&tcy;&icy;&pcy; &mdash; &icy;&ncy;&fcy;&ocy;&rcy;&mcy;&acy;&tscy;&icy;&yacy; &icy; &rcy;&acy;&zcy;&rcy;&iecy;&shcy;&iecy;&ncy;&icy;&yacy; &ncy;&acy; &fcy;&ocy;&tcy;&ocy; &ocy;&zhcy;&icy;&dcy;&acy;&yucy;&tcy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&ocy;&vcy;&acy;&ncy;&icy;&yacy; &kcy;&lcy;&icy;&ncy;&icy;&kcy;&icy;.">
+       Student prototype &mdash; content and image permissions awaiting clinic approval.
+      </span>
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script defer="" src="script.js">
+  </script>
+ </body>
+</html>
